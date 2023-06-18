@@ -24,6 +24,6 @@ output "tags" {
   description = <<EOD
   Resource Group tags
   EOD
-  value       = merge(azurerm_resource_group.this.*.tags)
+  value       = module.label.tags
 }
 ### [END] output.tf ###

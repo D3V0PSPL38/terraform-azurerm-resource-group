@@ -1,2 +1,3 @@
-### [BEGIN] variables.tf <<EOF
+### [BEGIN] variables.tf ###
+
 ### [END] variables.tf ###

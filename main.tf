@@ -14,7 +14,7 @@ module "label" {
 }
 
 resource "azurerm_resource_group" "this" {
-  count    = (local.e && var.az_resource_group) ? 1 : 0
+  count    = local.e ? 1 : 0
   name     = format("%s-%02d", module.rg_label.id, count.index + 1)
   location = var.az_location
   tags     = module.label.tags

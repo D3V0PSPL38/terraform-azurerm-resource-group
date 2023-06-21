@@ -11,7 +11,7 @@ module "label" {
   location        = var.location
   label_order     = var.label_order
   id_length_limit = var.id_length_limit
-  tags            = local.default_tags
+  tags            = var.tags
   context         = module.this.context
 }
 
